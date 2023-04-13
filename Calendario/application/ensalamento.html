@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quadro de Horarios</title>
+    <link rel="stylesheet" href="style/estilo.css" />
+    <script src="js/ensalamento.js"></script>
+  </head>
+  <body>
+    <h1 id="title">Ensalamento Prof. James</h1>
+
+    <input type="button" value="Apagar 3" onclick="executar()" />
+    <input type="number" name="" id="indice" />
+
+    <div id="calendario" class="grade">
+      <div class="row-header row1">
+        <div class="col-header col1">Dom</div>
+        <div class="col-header col2">Seg</div>
+        <div class="col-header col3">Ter</div>
+        <div class="col-header col4">Qua</div>
+        <div class="col-header col5">Qui</div>
+        <div class="col-header col6">Sex</div>
+        <div class="col-header col7">Sab</div>
+      </div>
+    </div>
+    
+    <script>
+      createCalendarios("calendario");
+    </script>
+  </body>
+</html>

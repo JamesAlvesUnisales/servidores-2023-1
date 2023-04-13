@@ -1,0 +1,27 @@
+version: '3.4'
+
+services:
+  db:
+    image: postgres
+    restart: always
+    volumes:
+      - "D:/WORKSPACE/Projetos_Frontend_20231/Calendario/data/:/var/lib/postgresql/data"
+    environment:
+      POSTGRES_PASSWORD: Salesiano123
+      POSTGRES_USER: admin
+      POSTGRES_DB: teste
+    ports:
+      - "5432:5432"
+    networks:
+      - redeEnsalamento
+  app:
+    image: httpd
+    volumes:
+      - "D:/WORKSPACE/Projetos_Frontend_20231/Calendario/app/://usr/local/apache2/htdocs/"
+    ports:
+      - "80:80"
+    networks:
+      - redeEnsalamento
+networks:
+  redeEnsalamento:
+    driver: bridge

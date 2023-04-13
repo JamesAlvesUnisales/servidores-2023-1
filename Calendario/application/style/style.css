@@ -1,0 +1,23 @@
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+}
+
+div#frame {
+    border: 1px solid #82ccdd;
+    border-radius: 10px;
+    width: 40%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    justify-content: center;
+}
+
+div#logo {
+    border: 1px solid;
+    border-radius: 10px;
+    background-image: url(img/logo.png);
+}

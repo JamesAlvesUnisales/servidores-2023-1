@@ -1,0 +1,88 @@
+<html>
+
+<head>
+    <title>Titulo do documento</title>
+    <style>
+        h1 {
+            background-color: #34495E;
+            color: #ECF0F1;
+        }
+        body {
+            background-color: green;
+        }
+        div#formulario {
+            background-color: #8a2be2;
+            border: 1px solid;
+            border-bottom: 2px white solid;
+            margin: auto 39px 15px 69px;
+            padding: 10px;
+        }
+        .combo-input {
+            border: 1px solid #f5f5f5;
+            padding: 8px;
+            margin: 2px;
+            border-radius: 15px;
+        }
+        .combo-input > label {
+            height: 24px;
+        }
+        .combo-input > input {
+            height: 20px;
+            width: 100%;
+            margin-top: 8px;
+            border-radius: 8px;
+            margin: none;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <h1>Cadastro de Aluno</h1>
+    <!--
+            h1 h2 h3 h4 niveis de texto
+        -->
+    <div id="formulario">
+        <p>Formulario</p>
+
+        <div class="combo-input" style="background-color: #4c59cd;">
+            <label for="nome" style="color: rgb(173, 255, 47); background-color: black;">Nome:</label>
+            <input id='nome' type="text" />
+        </div>
+        <div  class="combo-input">
+            <label for="">Data Nascimento</label>
+            <input id='dtNascimento' type="date" />
+        </div>
+        <div  class="combo-input">
+            <label for="">E-mail</label>
+            <input id="email" type="email" />
+        </div>
+        <div  class="combo-input">
+            <label for="dtIngresso">Data Ingresso</label>
+            <input id='dtIngresso' type="date" placeholder="Data Ingresso" />
+        </div>
+        <div  class="combo-input">
+            <label for="">Matricula</label>
+            <input id="matricula" type="number" min="10" max="100" />
+        </div>
+        <div  class="combo-input">
+            <label for="">Curso</label>
+            <input id="'curso" type="text" />
+        </div>
+        <div>
+            <label for="">Período</label>
+            <input id="'periodo" type="number" name="" id="">
+        </div>
+        <div>
+            <p>PAI</p>
+            <div style="background-color: #34495E;">
+                <p>FILHO</p>
+            </div>
+        </div>
+        <button id='bntEnviar' type="submit">Enviar</button>
+        <input type="button" id='btnLimpar ' value="Limpar Fomulário">
+    </div>
+</body>
+
+</html>
